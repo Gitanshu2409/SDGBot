@@ -6,7 +6,7 @@ public class AwareBotX{
 
 // Welcome Program
       System.out.println("|#################################################|");
-      System.out.println("|###|Welcome to AwareBotX, I am Still a Prototype.|###|");
+      System.out.println("|#|Welcome to AwareBotX, I am Still a Prototype.|#|");
       System.out.println("|#################################################|");
       System.out.println("");
       System.out.println("WARNING : Please provide all input in capital letters only.....");
