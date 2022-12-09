@@ -6,7 +6,7 @@ public class AwareBotX{
 
 // Welcome Program
       System.out.println("|#################################################|");
-      System.out.println("|#|Welcome to AwareBotX, I am Still a Prototype.|#|");
+      System.out.println("|###|Welcome to AwareBotX, I am Still a Prototype.|###|");
       System.out.println("|#################################################|");
       System.out.println("");
       System.out.println("WARNING : Please provide all input in capital letters only.....");
@@ -27,6 +27,14 @@ public class AwareBotX{
     else if (behave == 2){
     System.out.println("Switching to Friendly Behaviour.....");
     friend();
+    }
+    else if (behave == 3){
+    System.out.println("You have toggled a hidden option which introduces myself to you. -- ");
+    System.out.println("");
+    System.out.println("I am made by Gitanshu Pal and Simarjeet with great efforts and dedication under a time crunch.");
+    System.out.println("I hope i will be pretty interesting to you.");
+    System.out.println("");
+    aware();
     }
     else{
     System.out.println("Sorry i don't get that");
@@ -88,9 +96,7 @@ public class AwareBotX{
       else{
         continue;
       }
-
     }
-
 }//main() ends here...
 
   static void sumtwo(){
@@ -185,11 +191,20 @@ public class AwareBotX{
           default:
           System.out.println("But if you will not be able to save your planet then how will you be able to accomplish your goal ?");
           break;
-    }
+          case 12:
+          System.out.println("You have toggled an easter egg...there are many in my code.");
+          System.out.println("But this easter egg is more of a problem because it makes me go out of context ..");
+          System.out.println("");
+          System.out.println("Roses are red..");
+          System.out.println("sky is blue..");
+          System.out.println("I am now out of context so do you...");
+          System.out.println("");
         System.out.println("Think about it......");
-      return;
+        break;
+      }
+        return;
   }
-  static void fact(){
+  static void fact() {
       float fct = (float) Math.random();
     if(fct <= 0.0){
           System.out.println("Around 27,000 trees are cut down each day.");
@@ -221,10 +236,10 @@ public class AwareBotX{
     else if (fct <= 0.9){
           System.out.println("Arctic sea ice is rapidly diminishing.");
         }
-    else{
+    else {
       System.out.println("Two-thirds of extreme weather events in the last 20 years were influenced by humans.");
+    }
     return;
-  }
 }
 
   static void friend(){
