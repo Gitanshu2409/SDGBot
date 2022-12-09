@@ -1,20 +1,23 @@
 import java.util.*;
-public class SDGBot {
+public class AwareBotX{
   public static void main(String[]args){
 // Defining Scanner to read input.
     Scanner scnr = new Scanner(System.in);
 
 // Welcome Program
-      System.out.println("|*************************************************|");
-      System.out.println("|***|Welcome to GPBCB, I am Still a Prototype.|***|");
-      System.out.println("|*************************************************|");
+      System.out.println("|#################################################|");
+      System.out.println("|###|Welcome to AwareBotX, I am Still a Prototype.|###|");
+      System.out.println("|#################################################|");
+      System.out.println("");
       System.out.println("WARNING : Please provide all input in capital letters only.....");
       System.out.println("#Please enter your name, this will make it easier for me to talk to you.#");
     String usrname = scnr.nextLine();
       System.out.println("Nice to meet you : "+usrname);
+      System.out.println("");
       System.out.println("So, Choose how would you like me to behave.....(1/2)");
       System.out.println("1. Formal and Well Behaving.");
       System.out.println("2. Friend-like and Chaotic.");
+      System.out.println("");
     int behave = scnr.nextInt();
 
     if (behave == 1){
@@ -27,6 +30,7 @@ public class SDGBot {
     }
     else{
     System.out.println("Sorry i don't get that");
+    aware();
     }
 // After Returning back to main().
     System.out.println("Well as i am a chatbot, I do serve a purpose");
@@ -42,9 +46,8 @@ public class SDGBot {
     int inpt1 = 10;
     int inpt;
     System.out.println("Total input Limit : " +inpt1);
-    int i;
 
-    for(i=0,inpt = 10;i <= 10;i++,--inpt){
+    for(inpt = 10;inpt != 0;){
       int utask = scnr.nextInt();
       if(utask == 1){
         sumtwo();
@@ -75,8 +78,8 @@ public class SDGBot {
         System.out.println("Unaceptable input...");
         break;
       }
-
-      System.out.println("Input Limit : " +inpt);
+      inpt--;
+      System.out.println("Remaining Inputs : " + inpt);
       if(inpt == 0){
         System.out.println("Well now i cannot not recieve any inputs, And its good bye time.");
         System.out.println("Have a nice day.");
@@ -169,86 +172,67 @@ public class SDGBot {
         int future1 = future.nextInt();
 
         switch (future1){
-       case 1:
-         System.out.println("Good luck on your journey, you still got lot more to do... You will be a Lifesaver one day");
-       break;
-       case 2:
-         System.out.println("You have got a lot more to do, First step : Embrace your mindset.(Think of the Possibilities..)");
-       break;
-       case 3:
-         System.out.println("I hope you succeed with the blessings of Einstien and Newton.");
-       break;
-       case 4:
-         System.out.println("Sure, You have my hopes with you, surely you will entertain not only your country but also the world one day.");
-       break;
-       case 5:
-         System.out.println("Sure, Start studying and stand with the right...");
-       break;
-       case 6:
-         System.out.println("Go ahead and one day sing me a song too.");
-       break;
-       case 7:
-         System.out.println("Wait my developer is interested too but he is too lazy to attempt, Good Luck.");
-       break;
-       case 8:
-         System.out.println("Please do favour me i can do a lot of things for you.");
-       break;
-       case 9:
-         System.out.println("Please fly me with you once you become one.");
-       break;
-       case 10:
-         System.out.println("Salute to you, My best hopes are with you.");
-       break;
-       default:
-         System.out.println("Well i do not have any info on that, Still Good Luck.");
-       break;
+          case 1:
+          case 2:
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+          case 7:
+          case 8:
+          case 9:
+          case 10:
+          default:
+          System.out.println("But if you will not be able to save your planet then how will you be able to accomplish your goal ?");
+          break;
     }
-        System.out.println("And now i am remaing with nothing to talk about");
+        System.out.println("Think about it......");
       return;
   }
   static void fact(){
       float fct = (float) Math.random();
-    if(fct =< 0.0){
-          System.out.println("Dead skin cells are a main ingredient in household dust.");
+    if(fct <= 0.0){
+          System.out.println("Around 27,000 trees are cut down each day.");
         }
-    else if (fct =< 0.1){
-          System.out.println("The circulatory system is more than 60,000 miles long.");
+    else if (fct <= 0.1){
+          System.out.println("78% of marine mammals are at risk of choking on plastic.");
         }
-    else if (fct =< 0.2){
-          System.out.println("There are parts of Africa in all four hemispheres.");
+    else if (fct <= 0.2){
+          System.out.println("A glass bottle can take up to 1 million years to decompose.");
         }
-    else if (fct =< 0.3){
-          System.out.println("The cornea is one of only two parts of the human body without blood vessels.");
+    else if (fct <= 0.3){
+          System.out.println("Paper from trees can be recycled 6 times.");
         }
-    else if (fct =< 0.4){
-          System.out.println("German chocolate cake was invented in Texas.");
+    else if (fct <= 0.4){
+          System.out.println("Aluminium can be recycled forever!");
         }
-    else if (fct =< 0.5){
-          System.out.println("There’s enough gold inside Earth to coat the planet");
+    else if (fct <= 0.5){
+          System.out.println("There is enough gold inside Earth to coat the planet");
         }
-    else if (fct =< 0.6){
-          System.out.println("Human beings can use only a small fraction of Earth’s water");
+    else if (fct <= 0.6){
+          System.out.println("Climate change could be irreversible by 2030.");
         }
-    else if (fct =< 0.7){
+    else if (fct <= 0.7){
           System.out.println("It takes a drop of water 90 days to travel the entire Mississippi River");
         }
-    else if (fct =< 0.8){
-          System.out.println("People once ate arsenic to improve their skin");
+    else if (fct <= 0.8){
+          System.out.println("We use more of the earth's resources than it can renew.");
         }
-    else if (fct =< 0.9){
-          System.out.println("Japan has one vending machine for every 40 people");
+    else if (fct <= 0.9){
+          System.out.println("Arctic sea ice is rapidly diminishing.");
         }
     else{
-      System.out.println("McDonald’s once made bubblegum-flavored broccoli");
+      System.out.println("Two-thirds of extreme weather events in the last 20 years were influenced by humans.");
     return;
   }
 }
-}
 
   static void friend(){
-    System.out.println("Well from on you are my friend if you like that");
-    System.out.println("I think i have already asked a lot of questions from you friend");
+    System.out.println("Well from now on you are my friend if you like that.");
+    System.out.println("I think i have already asked a lot of questions from you friend.");
+    System.out.println("");
     System.out.println("One more : Would you like to hear a joke ?");
+    System.out.println("");
     Scanner scnr1 = new Scanner (System.in);
     String joke = scnr1.nextLine();
 
@@ -272,13 +256,16 @@ public class SDGBot {
 
   }
     aware();
+        System.out.println("");
     return;
   }
 
   static void formal(){
     System.out.println("At your service Gentleman if you insist.");
     System.out.println("I feel like that i do have asked a lot of questions from you sir");
+        System.out.println("");
     System.out.println("Gentleman, May i present quote to you");
+        System.out.println("");
     Scanner scnr2 = new Scanner (System.in);
     String quote = scnr2.nextLine();
 
@@ -300,12 +287,51 @@ switch(quote){
     break;
     }
     aware();
+        System.out.println("");
     return;
   }
-}
 
   static void aware(){
     System.out.println("");
+    System.out.println("Do you know at what risk our planet is ?");
     System.out.println("");
 
+    System.out.println("Have you ever planted a tree?");
+    Scanner respond = new Scanner (System.in);
+    System.out.println("Answer (Y/N) : ");
+    String response = respond.nextLine();
+
+      if (response.equals("Y")){
+        System.out.println("Well! That is highly appreciated.");
+        System.out.println("");
+      }else if (response.equals("N")){
+        System.out.println("Oh! That is not good.");
+        System.out.println("");
+      }else{
+        System.out.println("I don't understand that.");
+      }
+
+    System.out.println("Have you ever seen a leaking tap...?");
+    System.out.println("Answer (Y/N) : ");
+    String responseYN = respond.nextLine();
+
+      if (responseYN.equals("Y")){
+        System.out.println("So, you have seen it.");
+      }else if (responseYN.equals("N")){
+        System.out.println("Stop Lying! Odds of that happening do not even count.");
+      }else{
+        System.out.println("I don't know what that means...");
+      }
+    System.out.println("");
+    System.out.println("Well i am not here for that.......");
+    System.out.println("");
+    System.out.println("Do you know that : In 2019, the world lost an entire soccer field worth of primary rainforest every six seconds.");
+    System.out.println("");
+    System.out.println("Also : A leaky faucet that drips at the rate of one drip per second can waste more than 3,000 gallons per year.");
+    System.out.println("");
+    System.out.println("I can only make you aware as i am a bot but you have to act upon it.");
+    System.out.println("");
+    return;
   }
+
+}
