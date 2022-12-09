@@ -243,6 +243,7 @@ public class SDGBot {
     return;
   }
 }
+}
 
   static void friend(){
     System.out.println("Well from on you are my friend if you like that");
@@ -270,11 +271,12 @@ public class SDGBot {
     break;
 
   }
+    aware();
     return;
   }
 
   static void formal(){
-    System.out.println("At your service Genetleman if you insist.");
+    System.out.println("At your service Gentleman if you insist.");
     System.out.println("I feel like that i do have asked a lot of questions from you sir");
     System.out.println("Gentleman, May i present quote to you");
     Scanner scnr2 = new Scanner (System.in);
@@ -297,7 +299,13 @@ switch(quote){
     System.out.println("Lets move on.");
     break;
     }
-
+    aware();
     return;
   }
 }
+
+  static void aware(){
+    System.out.println("");
+    System.out.println("");
+
+  }
